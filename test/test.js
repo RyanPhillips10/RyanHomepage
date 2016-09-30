@@ -9,14 +9,6 @@ var Book = require('../routes/user');
 // chai.request (...) was not a function of chai
 chai.use(chaiHttp);
 
-describe('Array', function() {
-  describe('#indexOf()', function() {
-    it('should return -1 when the value is not present', function() {
-      assert.equal(-1, [1,2,3].indexOf(4));
-    });
-  });
-});
-
 describe('users API', function () {
 	describe('users API started', function () {
 		it ('user API should succeed', function  () {
