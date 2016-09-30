@@ -1,5 +1,9 @@
 language: node_js
 node_js:
   - "6"
-before_script:
-  - npm install -g gulp
+install:
+  - npm install
+  - bower install
+script:
+  - node ./bin/www
+
