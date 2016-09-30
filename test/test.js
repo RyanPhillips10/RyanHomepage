@@ -4,8 +4,9 @@ var chaiHttp = require('chai-http');
 var server = require('../app');
 var should = chai.should();
 var Book = require('../routes/user');
-console.log (chai);
 
+// This line was not included in tutorial, before this line
+// chai.request (...) was not a function of chai
 chai.use(chaiHttp);
 
 describe('Array', function() {
