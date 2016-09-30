@@ -34,3 +34,16 @@ describe('Main Page', function () {
 		});
 	});
 });
+
+describe('About Page', function () {
+	describe('About Page has started', function () {
+		it ('About Page has started', function  () {
+			chai.request(server)
+            .get('/about')
+            .end((err, res) => {
+                res.should.have.status(200);
+            	done();
+            });
+		});
+	});
+});
