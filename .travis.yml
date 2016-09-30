@@ -11,6 +11,6 @@ script:
 deploy:
   provider: azure_web_apps
   skip_cleanup: true
-  verbose: true
+  verbose: false
   on: 
     branch: release
