@@ -11,6 +11,10 @@ var routes = require('./routes/index');
 var users = require('./routes/user');
 var about = require('./routes/about');
 
+var appInsights = require("applicationinsights");
+appInsights.setup().start();
+var client = appInsights.getClient();
+
 var app = express();
 
 var env = process.env.NODE_ENV || 'development';
