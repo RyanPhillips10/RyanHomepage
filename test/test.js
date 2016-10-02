@@ -9,31 +9,31 @@ var Book = require('../routes/user');
 // chai.request (...) was not a function of chai
 chai.use(chaiHttp);
 
-describe('users API', function () {
-	describe('users API started', function () {
-		it ('user API should succeed', function  () {
-			chai.request(server)
-            .get('/users')
-            .end((err, res) => {
-                res.should.have.status(200);
-            	done();
-            });
-		});
-	});
-});
+// describe('users API', function () {
+// 	describe('users API started', function () {
+// 		it ('user API should succeed', function  () {
+// 			chai.request(server)
+//             .get('/users')
+//             .end((err, res) => {
+//                 res.should.have.status(200);
+//             	done();
+//             });
+// 		});
+// 	});
+// });
 
-describe('Main Page', function () {
-	describe('Main Page has started', function () {
-		it ('Main Page has started', function  () {
-			chai.request(server)
-            .get('/')
-            .end((err, res) => {
-                res.should.have.status(200);
-            	done();
-            });
-		});
-	});
-});
+// describe('Main Page', function () {
+// 	describe('Main Page has started', function () {
+// 		it ('Main Page has started', function  () {
+// 			chai.request(server)
+//             .get('/')
+//             .end((err, res) => {
+//                 res.should.have.status(200);
+//             	done();
+//             });
+// 		});
+// 	});
+// });
 
 // describe('About Page', function () {
 // 	describe('About Page has started', function () {
